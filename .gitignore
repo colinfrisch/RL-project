@@ -1,0 +1,9 @@
+# Python
+__pycache__/
+.DS_Store
+
+# courses
+TP/
+cours/
+results/
+project_assignment_2026.pdf

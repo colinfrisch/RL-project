@@ -1,0 +1,9 @@
+gymnasium==0.29.1
+highway-env>=1.9.1
+stable-baselines3>=2.3.0
+torch>=2.2.0
+numpy>=1.26.0
+matplotlib>=3.8.0
+pandas>=2.2.0
+ipykernel>=6.29.0
+jupyter>=1.0.0
