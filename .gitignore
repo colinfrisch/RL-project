@@ -1,9 +1,15 @@
 # Python
 __pycache__/
+*.pyc
 .DS_Store
 
-# courses
+# Virtual env
+.venv/
+
+# Course materials (not part of deliverable)
 TP/
 cours/
-results/
 project_assignment_2026.pdf
+
+# Logs
+results/train.log

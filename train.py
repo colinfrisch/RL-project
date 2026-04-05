@@ -175,7 +175,16 @@ def train_dqn(agent, env, n_episodes, eval_freq=200, train_seed=0):
         agent.decrease_epsilon()
         ep_rewards.append(ep_reward)
 
-        if (ep + 1) % eval_freq == 0:
+        if ep < 10:
+            elapsed = time.time() - t0
+            print(
+                f'[DQN ep {ep+1:4d}]'
+                f'  reward={ep_reward:.3f}'
+                f'  eps={agent.epsilon:.3f}'
+                f'  elapsed={elapsed:.1f}s',
+                flush=True,
+            )
+        elif (ep + 1) % eval_freq == 0:
             greedy_fn = lambda o: agent.get_action(o, epsilon=0.0)
             mean_r = eval_agent(greedy_fn, env, n_episodes=10).mean()
             elapsed = time.time() - t0
