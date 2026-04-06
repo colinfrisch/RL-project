@@ -13,3 +13,7 @@ project_assignment_2026.pdf
 
 # Logs
 results/train.log
+
+
+results/safety_dqn/
+results/safety_eval/
