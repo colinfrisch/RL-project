@@ -39,7 +39,7 @@ DQN_HYPERPARAMS = {
     "epsilon_min": 0.05,
     "learning_rate": 5e-4,
     "hidden_size": 256,
-    "n_episodes": 2000,
+    "n_episodes": 300,
 }
 
 # Stable-Baselines3 hyperparameters (matched to our DQN for fair comparison)
@@ -55,5 +55,5 @@ SB3_HYPERPARAMS = {
     "exploration_initial_eps": 1.0,
     "exploration_final_eps": 0.05,
     "policy_kwargs": {"net_arch": [256, 256]},
-    "total_timesteps": 80000,
+    "total_timesteps": 15000,
 }
